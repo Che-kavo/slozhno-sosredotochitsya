@@ -1,7 +1,3 @@
-:root {
-  --font-family: 'IBM Plex mono';
-}
-
 @media (prefers-color-scheme: dark) {
 
   :root {

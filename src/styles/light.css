@@ -18,6 +18,7 @@
   --corners-color: var(--main-text-color);
   --link-shadow: var(--title-color);
   --rec-color: var(--background-color);
+  --font-family: 'IBM Plex mono';
 }
 
 .page.theme_light .header__rec {
@@ -26,4 +27,23 @@
 
 .page.theme_light .decor {
   display: none;
+}
+
+@media (prefers-color-scheme: light) {
+
+  .header__rec {
+    display: none;
+  }
+
+  .decor {
+    display: none;
+  }
+
+  .page.theme_dark .decor {
+    display: inline;
+  }
+
+  .page.theme_dark .header__rec {
+    display: inline;
+  }
 }
