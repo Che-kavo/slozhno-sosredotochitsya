@@ -6,7 +6,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  background-position: top center;
+  background-position: center;
   font-weight: 400;
   font-size: 18px;
   font-family: 'IBM Plex Mono', monospace;
@@ -74,7 +74,7 @@
   display: flex;
   align-items: center;
   gap: 10px;
-  margin: 20px 50px 0 0;
+  margin: 21px 29.5px 0 0;
   text-transform: uppercase;
   color: var(--corners-color);
   inset-inline-end: 0;
@@ -87,22 +87,14 @@
   }
 }
 
-.decor {
-  position: absolute;
+.header__rec::after {
+  content: "";
   inset-inline-end: 0;
-  margin: 28px 30px 0 0;
   border-radius: 50%;
   box-shadow: 0 0 4px 2px var(--accent-color, #ff0070);
   background-color: var(--accent-color, #ff0070);
   min-height: 9px;
   min-width: 9px;
-}
-
-@media screen and (max-width: 767px) {
-
-  .decor {
-    margin: 20px;
-  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
@@ -207,6 +199,7 @@
   background-color: var(--title-decor);
   font-weight: 700;
   inline-size: 50%;
+  max-inline-size: 491px;
   line-height: 130%;
   margin-inline-end: 20px;
   margin-block-end: 60px;
@@ -298,6 +291,7 @@
   flex-direction: row;
   gap: 20px;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
@@ -308,7 +302,7 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
 
   .section__article-list {
     display: block;
@@ -400,6 +394,7 @@
   gap: 10px;
   font-size: 18px;
   max-width: 100%;
+  min-width: 314px;
   flex: 1;
 }
 
@@ -442,6 +437,7 @@
   color: var(--article-title-color);
   background-clip: content-box;
   background-color: var(--title-decor);
+  font-weight: 400;
 }
 
 .article__text {
